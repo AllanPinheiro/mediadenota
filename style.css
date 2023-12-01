@@ -60,4 +60,6 @@ form input {
     width: 100px;
     height: 25px;
     background-color: white;
+    color: black;
+    font-weight: bold;
 }
