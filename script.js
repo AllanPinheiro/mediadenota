@@ -8,12 +8,15 @@ btnsubmit.addEventListener("click", (e) => {
 
     const soma = (nota1 + nota2) / 2
 
-    
     if (soma >= 7) {
-        result.innerText = `Nota ${soma.toFixed(1)} aprovado`
+        result.innerText = `Nota foi: ${soma.toFixed(1)} aprovado`
         result.style.color = "green"
-    } else {
-        result.innerText = `Nota ${soma.toFixed(1)} reprovado`
+    }
+    else if (nota1 == "" && nota2 == "") {
+        result.innerText = `Campo de nota vazio!`
+    }
+    else {
+        result.innerText = `Nota foi: ${soma.toFixed(1)} reprovado`
         result.style.color = "red"
     }
 
